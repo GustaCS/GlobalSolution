@@ -121,6 +121,7 @@ function cadastrar(){
 
 }
 
+
 function validar(valor,campo){
     //clean code
     if(valor==""){
