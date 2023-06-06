@@ -102,7 +102,7 @@ function cadastrar(){
     if(!validar(base_consumos.consumo,document.querySelector("#consumo")))return
 
     if(tipo_consumo ==="Corporativo"){
-        if(consumo<=200)
+        if(consumo<=200 && consumo>=0)
         array_consumo.push(base_consumos)
         atualizar()
         modal.hide()
@@ -111,7 +111,7 @@ function cadastrar(){
     }  
 
     if(tipo_consumo==="Domestico"){
-        if(consumo<=30)
+        if(consumo<=30 && consumo>=0)
         array_consumo.push(base_consumos)
         atualizar()
         modal.hide()
